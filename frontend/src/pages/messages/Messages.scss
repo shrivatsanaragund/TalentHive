@@ -1,0 +1,112 @@
+/* Styles for the Messages component */
+
+/* Outer container for the Messages component */
+.messages {
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+
+  /* Inner container */
+  .container {
+    width: 80%;
+    max-width: 1400px;
+    padding: 50px 0px;
+    color: #333;
+
+    /* Title section at the top */
+    .title {
+      display: flex;
+      justify-content: space-between;
+      color: #333;
+    }
+
+    /* Styling for the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      /* Styling for each table row */
+      tr {
+        padding: 40px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transform for animation */
+
+        /* Hover effect */
+        &:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transform: scale(1.01); /* Increase the size on hover */
+        }
+      }
+
+      /* Styling for table header cells */
+      th {
+        padding: 40px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      /* Styling for table data cells */
+      td {
+        padding: 35px;
+        text-align: center;
+
+        /* Styling for buttons inside table cells */
+        button {
+          background: linear-gradient(to right, #0d084d, #0d084d);
+          color: white;
+          padding: 10px 15px; /* Adjust the padding as needed */
+          border: none;
+          cursor: pointer;
+          font-size: 1rem; /* Adjust the font size as needed */
+          border-radius: 15px;
+          transition: background 0.3s ease;
+          margin-bottom: 20px;
+
+          /* Hover effect for buttons */
+          &:hover {
+            background: linear-gradient(to right, #0d084d, #0d084d);
+          }
+        }
+
+        /* Styling for the first cell in each row */
+        &:first-child {
+          font-weight: 500;
+        }
+
+        /* Styling for specific columns */
+        &:nth-child(2),
+        &:nth-child(3) {
+          color: #666;
+        }
+
+        /* Align the message content to the left */
+        &:nth-child(2) {
+          text-align: left;
+        }
+      }
+
+      /* Styling for each message row */
+      .message-row {
+        height: 80px;
+        border-radius: 10px;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        transition: box-shadow 0.3s ease;
+
+        /* Hover effect for message rows */
+        &:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for links inside message rows */
+        .link {
+          color: #000000;
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.pop-services-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  // margin: 20px;
+}
+
+
+.pop-button {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 5px;
+  font-weight: 700;
+  color: #494949;
+  background-color: white;
+}
+
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  opacity: 1;
+  transition: opacity 3s ease-in-out; 
+  /* Adjust the width based on your design */
+}
+
+.service-card {
+  width: 17%; /* Adjust the width to fit 5 cards within 70% */
+  box-sizing: border-box;
+  // box-shadow:  8px 8px 10px -6px rgba(0, 0, 0, 0.2);
+  // overflow: hidden;
+  transition: transform 3s ease-in-out;
+  opacity: 1;
+  // transition: opacity 0.5s ease-in-out; /* Add opacity transition */
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-cards.transitioning .service-card {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+// .service-card:not(:first-child) {
+//   opacity: 0; /* Hide all cards except the first one initially */
+// }
+
+.blog-card {
+  box-sizing: border-box;
+  width: 100%;
+  // overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.blog-label {
+  // display: inline-block;
+  color: rgb(150, 150, 150);
+  text-align: center;
+  border-radius: 15px;
+}

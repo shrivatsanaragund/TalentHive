@@ -1,0 +1,142 @@
+.home-section {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  transition: all  0.5s ease;
+  font-family: "Montserrat", sans-serif;
+  /* justify-content: center; */
+  &.bg-0{
+    background-color: #252467; 
+  }
+  &.bg-1{
+    background-color: #6b2121; 
+  }
+  &.bg-2{
+    background-color: #31551b; 
+  }
+  &.bg-3{
+    background-color: #471834; 
+  }
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 5rem;
+  width: 600px;
+  margin-right: 150px;
+}
+
+.home-text{
+  font-size: 2.5rem;
+  font-weight: 1000;
+  text-align: left;
+  color: #fff;
+}
+
+.text-and-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.text-pop{
+  font-weight: 700;
+  color: #fff;
+  padding-top: 2px;
+}
+
+.home-button {
+  padding: 5px 15px;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 500;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+  &.bg-0{
+    background-color: #252467; 
+  }
+  &.bg-1{
+    background-color: #6b2121; 
+  }
+  &.bg-2{
+    background-color: #31551b; 
+  }
+  &.bg-3{
+    background-color: #471834; 
+  }
+}
+
+.home-button:hover{
+  background-color: #fff;
+  &.bg-0{
+    color: #252467; 
+  }
+  &.bg-1{
+    color: #6b2121; 
+  }
+  &.bg-2{
+    color: #31551b; 
+  }
+  &.bg-3{
+    color: #471834; 
+  }
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.search-bar-wrapper {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-bar {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border: 1px solid #fff;
+  //border-radius: 10px;
+}
+
+.search-button {
+  padding: 10.5px 16px;
+  
+  border: 2px solid #fff;
+  color: #fff;
+  //border-radius: 10px;
+  width: max-content;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  &.bg-0{
+    background-color: #252467; 
+  }
+  &.bg-1{
+    background-color: #6b2121; 
+  }
+  &.bg-2{
+    background-color: #31551b; 
+  }
+  &.bg-3{
+    background-color: #471834; 
+  }
+} 
+.right-content {
+  height: 100%;
+  max-width: max-content;
+  transition: filter 0.5s ease;
+}
+
+.person-image {
+  height: 100%;
+  object-fit: contain;
+  transition: filter 1s ease;
+}

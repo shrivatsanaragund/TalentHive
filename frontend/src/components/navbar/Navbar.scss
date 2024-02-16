@@ -1,0 +1,250 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  // background-color: #252467;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+  
+  &.bg-0{
+    background-color: #252467; 
+  }
+  &.bg-1{
+    background-color: #6b2121; 
+  }
+  &.bg-2{
+    background-color: #31551b; 
+  }
+  &.bg-3{
+    background-color: #471834; 
+  }
+
+  &.active {
+    background-color: white;
+    color: black;
+
+    &.bg-0 button {
+      background-color: white !important;
+      color: #253a90 !important;
+      border: 1px solid #253a90 !important;
+    }
+    &.bg-1 button {
+      background-color: white !important;
+      color: #6b2121 !important;
+      border: 1px solid #6b2121 !important;
+    }
+    &.bg-2 button {
+      background-color: white !important;
+      color: #31551b !important;
+      border: 1px solid #31551b !important;
+    }
+    &.bg-3 button {
+      background-color: white !important;
+      color: #471834 !important;
+      border: 1px solid #471834 !important;
+      // background-color: #471834; 
+      // border-color: #471834; 
+    }
+
+    &.bg-0 select {
+      background-color: white !important;
+      color: #253a90 !important;
+      border: 1px solid #253a90 !important;
+    }
+    &.bg-1 select {
+      background-color: white !important;
+      color: #6b2121 !important;
+      border: 1px solid #6b2121 !important;
+    }
+    &.bg-2 select {
+      background-color: white !important;
+      color: #31551b !important;
+      border: 1px solid #31551b !important;
+    }
+    &.bg-3 select {
+      background-color: white !important;
+      color: #471834 !important;
+      border: 1px solid #471834 !important;
+      // background-color: #471834; 
+      // border-color: #471834; 
+    }
+  }
+
+  .nav-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+    }
+    .navbar-link {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+
+      span {
+        white-space: nowrap;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 15px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 200px;
+          font-weight: 300;
+          color: gray;
+        }
+      }
+
+      button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: transparent;
+        cursor: pointer;
+
+        
+        &.bg-0:hover{
+          // background-color: #252467; 
+          // border-color: #252467; 
+          background-color: white !important;
+          color: #252467 !important;
+          border: 1px solid #252467 !important;
+        }
+        &.bg-1:hover{
+          // background-color: #6b2121; 
+          // border-color: #6b2121; 
+          background-color: white !important;
+          color: #6b2121 !important;
+          border: 1px solid #6b2121 !important;
+        }
+        &.bg-2:hover{
+          // background-color: #31551b; 
+          // border-color: #31551b; 
+          background-color: white !important;
+          color: #31551b !important;
+          border: 1px solid #31551b !important;
+        }
+        &.bg-3:hover{
+        
+          background-color: white !important;
+      color: #471834 !important;
+      border: 1px solid #471834 !important;
+        }
+      }
+      select{
+        font-size: 16px;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+        &.bg-0:hover{
+          // background-color: #252467; 
+          // border-color: #252467; 
+          background-color: white !important;
+          color: #252467 !important;
+          border: 1px solid #252467 !important;
+        }
+        &.bg-1:hover{
+          // background-color: #6b2121; 
+          // border-color: #6b2121; 
+          background-color: white !important;
+          color: #6b2121 !important;
+          border: 1px solid #6b2121 !important;
+        }
+        &.bg-2:hover{
+          // background-color: #31551b; 
+          // border-color: #31551b; 
+          background-color: white !important;
+          color: #31551b !important;
+          border: 1px solid #31551b !important;
+        }
+        &.bg-3:hover{
+        
+          background-color: white !important;
+      color: #471834 !important;
+      border: 1px solid #471834 !important;
+        }
+      }
+
+    }
+  }
+
+  hr {
+    width: calc(100% - 2px);
+    height: 0;
+    border-top: 0.5px solid #ebe9e9;
+    border-bottom: 0.5px solid #ebe9e9;
+    margin-bottom: 0px;
+  }
+
+  .menu {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(84, 83, 83);
+    font-weight:lighter;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .menuLink{
+    padding: 8px 0px;
+
+      &.bg-0:hover{
+        border-bottom: 3px solid #252467; 
+      }
+      &.bg-1:hover{
+        border-bottom: 3px solid #6b2121; 
+      }
+      &.bg-2:hover{
+        border-bottom: 3px solid #31551b; 
+      }
+      &.bg-3:hover{
+        border-bottom: 3px solid #471834; 
+      }
+    
+  }
+}
+
+.button-logout{
+  background-color: white !important;
+  color: black !important;
+  border: solid 1px black !important;
+}
