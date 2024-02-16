@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OuSBNpwM)
 
 # talenthive.com
 
@@ -8,7 +7,7 @@
 ## Key Features
 * Diverse Services: Explore a wide array of freelance services, from graphic design and writing to programming and more.
 * Effortless Transactions: Our platform ensures secure and seamless transactions, providing a trustworthy environment for both freelancers and clients.
-* Review and Ratings System: Build trust through our robust review and ratings system. Leave feedback to help others make informed decisions.
+* Review and Rating System: Build trust through our robust review and ratings system. Leave feedback to help others make informed decisions.
 * Flexible Payments: Enjoy convenient payment options, making financial transactions smooth for both freelancers and clients.
 * User-Friendly Interface: With an intuitive design, Talent Hive offers a user-friendly experience, ensuring easy navigation for all users.
 
